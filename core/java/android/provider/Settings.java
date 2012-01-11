@@ -2377,6 +2377,12 @@ public final class Settings {
         public static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
 
         /**
+         * Whether to wake the screen with the trackball. The value is boolean (1 or 0).
+         * @hide
+         */
+        public static final String TRACKBALL_WAKE_SCREEN = "trackball_wake_screen";
+
+        /**
          * Whether to show the IME switcher in the status bar
          * @hide
          */
