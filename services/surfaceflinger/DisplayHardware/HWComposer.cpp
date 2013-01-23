@@ -231,12 +231,20 @@ void HWComposer::dump(String8& result, char* buffer, size_t SIZE,
     }
 }
 
-#ifdef QCOM_HDMI_OUT
+#ifdef QCOM_HARDWARE
 void HWComposer::perform(int event, int value) {
     if (mHwc) {
         mHwc->perform(mHwc, event, value);
     }
 }
+#endif
+
+#ifdef STE_HDMI
+int HWComposer::setHDMIParameter(int event, int value) {
+int ret = NO_INIT;
+return ret;
+}
+
 #endif
 
 // ---------------------------------------------------------------------------
